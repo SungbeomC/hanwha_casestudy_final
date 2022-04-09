@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-
+# Price momentum score with a period of 252 days
 def score252(firm):
     filename = "./Data/" + firm
     df = pd.read_csv(filename + ".csv", sep=",", header=0)
@@ -29,7 +29,7 @@ def score252(firm):
     df_252 = pd.DataFrame(df)
     return df_252
 
-
+# Price momentum score with a period of 126 days
 def score126(firm):
     filename = "./Data/" + firm
     df = pd.read_csv(filename + ".csv", sep=",", header=0)
@@ -56,7 +56,7 @@ def score126(firm):
     df_126 = pd.DataFrame(df)
     return df_126
 
-
+# Price momentum score with a period of 63 days
 def score63(firm):
     filename = "./Data/" + firm
     df = pd.read_csv(filename + ".csv", sep=",", header=0)
@@ -83,7 +83,7 @@ def score63(firm):
     df_63 = pd.DataFrame(df)
     return df_63
 
-
+# Exponential Moving Average with a period of 20 days
 def ema20(firm):
     filename = "./Data/" + firm
     df = pd.read_csv(filename + ".csv", sep=",", header=0)
@@ -116,6 +116,7 @@ def ema20(firm):
 def main():
     # Use only one stock to compare scores with different periods (252, 126, and 63) and exponential moving average
     # with period of 20 days (Using a plot and bar graphs)
+    # Took Amazon as a sample stock
     amazon252 = score252("AMZN")
     amazon252 = amazon252.drop(amazon252.index[0:1887], axis=0)
 
