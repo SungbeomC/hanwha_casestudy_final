@@ -1,4 +1,4 @@
-Price Momentum Score vs Exponential Moving Average (EMA)
+# Price Momentum Score vs Exponential Moving Average (EMA)
 
 I took Amazon as a sample stock to visualize and compare momentum scores with different periods and the exponential moving average.
 
