@@ -1,4 +1,4 @@
-# Sungbeom Choi - Hanwha Casestudy
+# Price Momentum Score
 
 sungbeom_choi_casestudy_Q2 includes an answer for the question #2 of the case study. This folder includes codes for price momentum score for a period of 252 days 
 and its results in a csv file.
